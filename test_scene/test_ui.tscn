@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://5rq7wkshggic"]
+
+[ext_resource type="PackedScene" uid="uid://d1t0pkhutlg7" path="res://player/player.tscn" id="1_t0tlc"]
+[ext_resource type="PackedScene" uid="uid://b4y30453v7vkq" path="res://ui/game_ui.tscn" id="2_3kdi4"]
+[ext_resource type="PackedScene" uid="uid://bep4ut8ei5pl8" path="res://enemy/Torch.tscn" id="3_mik0d"]
+
+[node name="TestUi" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_t0tlc")]
+position = Vector2(524, 335)
+speed = null
+sword_damage = null
+aura_damage = null
+health = null
+max_health = null
+
+[node name="GameUI" parent="." instance=ExtResource("2_3kdi4")]
+
+[node name="Torch" parent="." instance=ExtResource("3_mik0d")]
+position = Vector2(930, 406)

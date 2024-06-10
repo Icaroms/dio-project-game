@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce35670umau5k"]
+
+[ext_resource type="PackedScene" uid="uid://d1t0pkhutlg7" path="res://player/player.tscn" id="1_kj3ep"]
+[ext_resource type="PackedScene" uid="uid://bep4ut8ei5pl8" path="res://enemy/Torch.tscn" id="2_lwwh3"]
+
+[node name="TestBattle" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_kj3ep")]
+position = Vector2(253, 199)
+
+[node name="Torch" parent="." instance=ExtResource("2_lwwh3")]
+position = Vector2(558, 202)
+
+[node name="Torch2" parent="." instance=ExtResource("2_lwwh3")]
+position = Vector2(499, 425)
+
+[node name="Torch3" parent="." instance=ExtResource("2_lwwh3")]
+position = Vector2(280, 435)

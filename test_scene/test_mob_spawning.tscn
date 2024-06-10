@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bw0iptl6tesoj"]
+
+[ext_resource type="PackedScene" uid="uid://d1t0pkhutlg7" path="res://player/player.tscn" id="1_7ngtf"]
+[ext_resource type="PackedScene" uid="uid://clri8jyvqqck3" path="res://system/mob_spawner.tscn" id="2_frrnc"]
+
+[node name="TestMobSpawning" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_7ngtf")]
+position = Vector2(587, 364)
+speed = null
+sword_damage = null
+aura_damage = null
+health = null
+max_health = null
+
+[node name="MobSpawner" parent="." instance=ExtResource("2_frrnc")]
+unique_name_in_owner = true

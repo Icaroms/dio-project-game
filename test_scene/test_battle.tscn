@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://ce35670umau5k"]
+
+[ext_resource type="PackedScene" uid="uid://d1t0pkhutlg7" path="res://player/player.tscn" id="1_kj3ep"]
+[ext_resource type="PackedScene" uid="uid://bep4ut8ei5pl8" path="res://enemy/Torch.tscn" id="2_lwwh3"]
+[ext_resource type="PackedScene" uid="uid://dkj1r7vgpcrgg" path="res://enemy/Pawn.tscn" id="3_eji1r"]
+[ext_resource type="PackedScene" uid="uid://dkm86a1oqmpxq" path="res://enemy/Knight.tscn" id="4_rc66v"]
+[ext_resource type="PackedScene" uid="uid://cmf21cdr7tfju" path="res://misc/meat.tscn" id="5_1ji8n"]
+
+[node name="TestBattle" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_kj3ep")]
+position = Vector2(253, 199)
+speed = 5.0
+
+[node name="Torch" parent="." instance=ExtResource("2_lwwh3")]
+position = Vector2(558, 202)
+
+[node name="Torch2" parent="." instance=ExtResource("2_lwwh3")]
+position = Vector2(499, 425)
+
+[node name="Pawn" parent="." instance=ExtResource("3_eji1r")]
+position = Vector2(242, 500)
+
+[node name="Pawn2" parent="." instance=ExtResource("3_eji1r")]
+position = Vector2(64, 559)
+
+[node name="Knight" parent="." instance=ExtResource("4_rc66v")]
+position = Vector2(810, 567)
+
+[node name="Knight2" parent="." instance=ExtResource("4_rc66v")]
+position = Vector2(873, 327)
+
+[node name="Skull" parent="." instance=ExtResource("5_1ji8n")]
+position = Vector2(1065, 145)
+
+[node name="Skull2" parent="." instance=ExtResource("5_1ji8n")]
+position = Vector2(1077, 607)
